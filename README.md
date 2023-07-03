@@ -1,6 +1,18 @@
 # VueDemoApp
 
-This template should help get you started developing with Vue 3 in Vite.
+Demo App for an internship application.
+
+## Deployed app can be found here:
+
+https://akivonakira.github.io/VueDemoApp/
+
+- Used Axios to handle API calls.
+- Dark and Light theme selector.
+- View Dummy user Data from https://reqres.in/
+- Change pages.
+- Responsive styling.
+
+In addition I limited myself to only use Vue's color theme that was in base.css, it was a fun challange however I would have loved to use more accent colors.
 
 ## Recommended IDE Setup
 
