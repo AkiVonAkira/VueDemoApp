@@ -4,10 +4,20 @@ const apiInstance = axios.create({
     baseURL: 'https://reqres.in/api',
 });
 
-export function getUsers() {
-    return apiInstance.get('/users');
+export async function getUsers() {
+    try {
+        const response = await apiInstance.get('/users');
+        return response.data;
+    } catch (error) {
+        throw new Error(error);
+    }
 }
 
-export function getUsersByPage(page) {
-    return apiInstance.get(`/users?page=${page}`);
+export async function getUsersByPage(page) {
+    try {
+        const response = await apiInstance.get(`/users?page=${page}`);
+        return response.data;
+    } catch (error) {
+        throw new Error(error);
+    }
 }
